@@ -17,35 +17,35 @@ import Footer from './components/Footer';
 import './index.css';
 
 function App() {
-  useEffect(() => {
-    AOS.init({
-      duration: 1000,
-      easing: 'ease-in-out',
-      once: true,
-      mirror: false
-    });
-  }, []);
+    useEffect(() => {
+        AOS.init({
+            duration: 1000,
+            easing: 'ease-in-out',
+            once: true,
+            mirror: false
+        });
+    }, []);
 
-  return (
-    <Router basename="/abhireact-portfolio">
-      <div className="App bg-white dark:bg-gray-900 min-h-screen">
-        <Navbar />
-        <Routes>
-          <Route path="/" element={
-            <>
-              <Hero />
-              <About />
-              <Experience />
-              <Projects />
-              <Certifications />
-              <Contact />
-            </>
-          } />
-        </Routes>
-        <Footer />
-      </div>
-    </Router>
-  );
+    return (
+        <Router basename="/abhireact-portfolio">
+            <div className="App bg-white dark:bg-gray-900 min-h-screen">
+                <Navbar />
+                <Routes>
+                    <Route path="/" element={
+                        <>
+                            <Hero />
+                            <About />
+                            <Experience />
+                            <Projects />
+                            <Certifications />
+                            <Contact />
+                        </>
+                    } />
+                </Routes>
+                <Footer />
+            </div>
+        </Router>
+    );
 }
 
 export default App;

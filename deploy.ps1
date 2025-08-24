@@ -11,7 +11,8 @@ Write-Host "Checking Node.js installation..." -ForegroundColor Yellow
 try {
     $nodeVersion = node --version
     Write-Host "✓ Node.js version: $nodeVersion" -ForegroundColor Green
-} catch {
+}
+catch {
     Write-Host "✗ Node.js is not installed. Please install Node.js first." -ForegroundColor Red
     exit 1
 }
@@ -21,7 +22,8 @@ Write-Host "Checking npm installation..." -ForegroundColor Yellow
 try {
     $npmVersion = npm --version
     Write-Host "✓ npm version: $npmVersion" -ForegroundColor Green
-} catch {
+}
+catch {
     Write-Host "✗ npm is not installed. Please install npm first." -ForegroundColor Red
     exit 1
 }

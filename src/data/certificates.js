@@ -6,7 +6,7 @@ export const certificatesData = [
         issuer: 'ScholarHat',
         category: 'Web Development',
         date: '2024',
-        image: '/abhireact-portfolio/src/assets/certificates/react js.jpg',
+        image: require('../assets/certificates/react js.jpg'),
         description: 'Comprehensive course covering React fundamentals, components, hooks, and modern development practices.',
         skills: ['React.js', 'JavaScript', 'Component Architecture', 'Hooks']
     },
@@ -16,7 +16,7 @@ export const certificatesData = [
         issuer: 'HP LIFE Foundation',
         category: 'Artificial Intelligence',
         date: '2024',
-        image: '/abhireact-portfolio/src/assets/certificates/ai for begainers.jpg',
+        image: require('../assets/certificates/ai for begainers.jpg'),
         description: 'Introduction to artificial intelligence concepts, applications, and future implications.',
         skills: ['AI Fundamentals', 'Machine Learning Basics', 'AI Applications']
     },
@@ -26,7 +26,7 @@ export const certificatesData = [
         issuer: 'Google Cloud',
         category: 'Artificial Intelligence',
         date: '2024',
-        image: '/abhireact-portfolio/src/assets/certificates/introduction to generative ai.jpg',
+        image: require('../assets/certificates/introduction to generative ai.jpg'),
         description: 'Deep dive into generative AI technologies, models, and practical applications.',
         skills: ['Generative AI', 'Large Language Models', 'AI Ethics']
     },
@@ -36,7 +36,7 @@ export const certificatesData = [
         issuer: 'Google',
         category: 'Digital Marketing',
         date: '2024',
-        image: '/abhireact-portfolio/src/assets/certificates/ai power shopping ads.jpg',
+        image: require('../assets/certificates/ai power shopping ads.jpg'),
         description: 'Advanced techniques for creating and optimizing AI-powered advertising campaigns.',
         skills: ['Digital Advertising', 'AI Marketing', 'Campaign Optimization']
     },
@@ -46,7 +46,7 @@ export const certificatesData = [
         issuer: 'Industry Certification',
         category: 'Digital Marketing',
         date: '2024',
-        image: '/abhireact-portfolio/src/assets/certificates/ai power market.jpg',
+        image: require('../assets/certificates/ai power market.jpg'),
         description: 'Understanding AI applications in market analysis and business intelligence.',
         skills: ['Market Analysis', 'AI in Business', 'Data Analytics']
     },
@@ -56,7 +56,7 @@ export const certificatesData = [
         issuer: 'Tech Mahindra',
         category: 'Cybersecurity',
         date: '2024',
-        image: '/abhireact-portfolio/src/assets/certificates/cybersecurity.jpg',
+        image: require('../assets/certificates/cybersecurity.jpg'),
         description: 'Comprehensive cybersecurity training covering threats, protection, and best practices.',
         skills: ['Network Security', 'Threat Analysis', 'Security Protocols']
     },
@@ -66,7 +66,7 @@ export const certificatesData = [
         issuer: 'Semrush Academy',
         category: 'Digital Marketing',
         date: '2024',
-        image: '/abhireact-portfolio/src/assets/certificates/seo.jpg',
+        image: require('../assets/certificates/seo.jpg'),
         description: 'Complete SEO optimization strategies for improved search engine rankings.',
         skills: ['SEO Optimization', 'Keyword Research', 'Content Strategy']
     },
@@ -76,7 +76,7 @@ export const certificatesData = [
         issuer: 'Digital Marketing Institute',
         category: 'Digital Marketing',
         date: '2024',
-        image: '/abhireact-portfolio/src/assets/certificates/seo (2).jpg',
+        image: require('../assets/certificates/seo (2).jpg'),
         description: 'Advanced SEO strategies and technical optimization techniques.',
         skills: ['Technical SEO', 'Link Building', 'Analytics']
     },
@@ -86,7 +86,7 @@ export const certificatesData = [
         issuer: 'Microsoft',
         category: 'Data Analysis',
         date: '2024',
-        image: '/abhireact-portfolio/src/assets/certificates/excel.jpg',
+        image: require('../assets/certificates/excel.jpg'),
         description: 'Mastering Excel for data analysis, visualization, and business applications.',
         skills: ['Data Analysis', 'Excel Functions', 'Data Visualization']
     },
@@ -96,7 +96,7 @@ export const certificatesData = [
         issuer: 'Quick Learning Institute',
         category: 'Data Analysis',
         date: '2024',
-        image: '/abhireact-portfolio/src/assets/certificates/excel in an hour.jpg',
+        image: require('../assets/certificates/excel in an hour.jpg'),
         description: 'Intensive Excel training for rapid skill development and productivity.',
         skills: ['Excel Proficiency', 'Quick Analysis', 'Productivity Tools']
     },
@@ -106,7 +106,7 @@ export const certificatesData = [
         issuer: 'AI Education Institute',
         category: 'Artificial Intelligence',
         date: '2024',
-        image: '/abhireact-portfolio/src/assets/certificates/prompt engineering.jpg',
+        image: require('../assets/certificates/prompt engineering.jpg'),
         description: 'Advanced techniques for crafting effective prompts for AI language models.',
         skills: ['Prompt Design', 'AI Communication', 'Model Optimization']
     },
@@ -116,7 +116,7 @@ export const certificatesData = [
         issuer: 'Coding Academy',
         category: 'Web Development',
         date: '2024',
-        image: '/abhireact-portfolio/src/assets/certificates/web.jpg',
+        image: require('../assets/certificates/web.jpg'),
         description: 'Complete web development foundation covering HTML, CSS, and JavaScript.',
         skills: ['HTML/CSS', 'JavaScript', 'Web Standards', 'Responsive Design']
     },
@@ -126,7 +126,7 @@ export const certificatesData = [
         issuer: 'Canva',
         category: 'Design',
         date: '2024',
-        image: '/abhireact-portfolio/src/assets/certificates/canva 50 design.jpg',
+        image: require('../assets/certificates/canva 50 design.jpg'),
         description: 'Comprehensive design course covering 50 different design principles and techniques.',
         skills: ['Graphic Design', 'Visual Communication', 'Brand Design', 'Creative Tools']
     }

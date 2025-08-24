@@ -309,7 +309,7 @@ const Contact = () => {
                                 Email Me Directly
                             </a>
                             <a
-                                href="/abhireact-portfolio/static/media/abhi.pdf"
+                                href="/abhireact-portfolio/abhi.pdf"
                                 download="Abhishek_Singh_Resume.pdf"
                                 className="border-2 border-white text-white px-6 py-3 rounded-lg font-medium hover:bg-white hover:text-primary-600 transition-colors duration-200"
                             >

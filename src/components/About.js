@@ -81,7 +81,7 @@ const About = () => {
                             </p>
                         </div>
                         <motion.a
-                            href="/abhireact-portfolio/static/media/abhi.pdf"
+                            href="/abhireact-portfolio/abhi.pdf"
                             download="Abhishek_Singh_Resume.pdf"
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}

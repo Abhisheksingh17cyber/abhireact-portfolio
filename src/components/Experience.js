@@ -214,7 +214,7 @@ const Experience = () => {
                                 Get In Touch
                             </button>
                             <a
-                                href="/abhireact-portfolio/static/media/abhi.pdf"
+                                href="/abhireact-portfolio/abhi.pdf"
                                 download="Abhishek_Singh_Resume.pdf"
                                 className="btn-secondary"
                             >

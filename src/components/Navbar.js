@@ -50,7 +50,7 @@ const Navbar = () => {
 
     const downloadResume = () => {
         const link = document.createElement('a');
-        link.href = '/abhireact-portfolio/static/media/abhi.pdf';
+        link.href = '/abhireact-portfolio/abhi.pdf';
         link.download = 'Abhishek_Singh_Resume.pdf';
         link.click();
     };

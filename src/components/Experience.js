@@ -6,67 +6,71 @@ const Experience = () => {
     const experiences = [
         {
             id: 1,
-            title: 'Full-Stack Developer (Freelance)',
-            company: 'Independent Projects',
+            title: 'Web Developer',
+            company: 'Freelance Projects',
             location: 'Remote',
-            period: '2023 - Present',
+            period: '2024 - Present',
             type: 'Freelance',
-            description: 'Developing modern web applications using React.js, Node.js, and cloud technologies. Focus on creating responsive, user-friendly interfaces and scalable backend solutions.',
+            description: 'Developing responsive web applications using modern technologies. Creating user-friendly interfaces and implementing best practices for web development.',
             achievements: [
-                'Built 10+ responsive web applications with React.js',
-                'Implemented modern UI/UX design principles',
-                'Integrated AI/ML features into web applications',
-                'Achieved 95+ performance scores on web applications'
+                'Built professional portfolio website with React.js',
+                'Developed responsive layouts using Tailwind CSS',
+                'Implemented smooth animations with Framer Motion',
+                'Optimized websites for performance and SEO',
+                'Integrated contact forms and user interactions'
             ],
-            technologies: ['React.js', 'JavaScript', 'Node.js', 'Tailwind CSS', 'MongoDB', 'Git']
+            technologies: ['React.js', 'JavaScript', 'HTML/CSS', 'Tailwind CSS', 'Git', 'GitHub Pages']
         },
         {
             id: 2,
-            title: 'AI/ML Research Student',
-            company: 'Computer Science Department',
-            location: 'University',
-            period: '2023 - Present',
+            title: 'Computer Science Student',
+            company: 'University',
+            location: 'India',
+            period: '2022 - Present',
             type: 'Academic',
-            description: 'Conducting research on generative AI applications and prompt engineering techniques. Exploring the intersection of AI and web development.',
+            description: 'Pursuing Computer Science Engineering degree with focus on web development, AI/ML, and cybersecurity. Actively learning modern technologies and building practical projects.',
             achievements: [
-                'Completed multiple AI/ML certification courses',
-                'Developed prompt engineering expertise',
-                'Created AI-powered web application prototypes',
-                'Presented research findings to academic peers'
+                'Completed 13+ professional certification courses',
+                'Mastered React.js and modern web development',
+                'Studied AI/ML fundamentals and prompt engineering',
+                'Learned cybersecurity principles and best practices',
+                'Maintained excellent academic performance'
             ],
-            technologies: ['Python', 'Machine Learning', 'Generative AI', 'Prompt Engineering', 'Research']
+            technologies: ['Java', 'Python', 'Data Structures', 'Algorithms', 'Database Management', 'Software Engineering']
         },
         {
             id: 3,
-            title: 'Digital Marketing Specialist',
-            company: 'Various Clients',
+            title: 'Digital Marketing Trainee',
+            company: 'Online Learning',
             location: 'Remote',
-            period: '2022 - Present',
-            type: 'Freelance',
-            description: 'Providing digital marketing services including SEO optimization, content strategy, and AI-powered advertising campaigns.',
+            period: '2023 - 2024',
+            type: 'Training',
+            description: 'Completed comprehensive digital marketing training covering SEO, content marketing, and AI-powered advertising strategies.',
             achievements: [
-                'Improved website rankings for 15+ clients',
-                'Increased organic traffic by 200% on average',
-                'Implemented AI-powered ad campaigns',
-                'Achieved 150% ROI improvement for clients'
+                'Earned SEO certification from Semrush Academy',
+                'Learned Google Ads and AI-powered advertising',
+                'Studied content marketing and social media strategies',
+                'Completed Google Analytics training',
+                'Applied marketing principles to personal projects'
             ],
-            technologies: ['SEO', 'Google Analytics', 'Content Marketing', 'AI Tools', 'Social Media']
+            technologies: ['SEO', 'Google Analytics', 'Google Ads', 'Content Marketing', 'Social Media Marketing']
         },
         {
             id: 4,
             title: 'Cybersecurity Trainee',
-            company: 'Tech Mahindra',
+            company: 'Tech Mahindra Foundation',
             location: 'Online Program',
             period: '2024',
             type: 'Training',
-            description: 'Completed comprehensive cybersecurity training program covering network security, threat analysis, and risk management.',
+            description: 'Completed cybersecurity fundamentals training program covering network security, threat analysis, and risk management principles.',
             achievements: [
-                'Mastered cybersecurity fundamentals',
-                'Learned threat detection and analysis',
-                'Implemented security best practices',
-                'Earned professional certification'
+                'Earned cybersecurity fundamentals certification',
+                'Learned network security principles',
+                'Studied threat detection and analysis methods',
+                'Understood risk management frameworks',
+                'Applied security best practices in projects'
             ],
-            technologies: ['Network Security', 'Risk Management', 'Threat Analysis', 'Security Protocols']
+            technologies: ['Network Security', 'Risk Assessment', 'Threat Analysis', 'Security Protocols', 'Cybersecurity Tools']
         }
     ];
 
@@ -195,12 +199,12 @@ const Experience = () => {
                 >
                     <div className="card max-w-2xl mx-auto">
                         <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
-                            Currently Seeking Opportunities
+                            Open to Opportunities
                         </h3>
                         <p className="text-gray-600 dark:text-gray-300 mb-6">
-                            I'm actively looking for full-time opportunities in web development,
-                            AI/ML engineering, or cybersecurity roles where I can contribute to
-                            innovative projects and continue growing my skills.
+                            As a Computer Science Engineering student with hands-on experience in web development, 
+                            I'm seeking internship or entry-level opportunities in frontend development, full-stack development, 
+                            or web development roles where I can apply my skills and continue learning.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
                             <button

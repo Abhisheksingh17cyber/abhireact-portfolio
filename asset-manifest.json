@@ -1,13 +1,26 @@
 {
   "files": {
     "main.css": "/abhireact-portfolio/static/css/main.e9761080.css",
-    "main.js": "/abhireact-portfolio/static/js/main.c8beda44.js",
+    "main.js": "/abhireact-portfolio/static/js/main.c8a9fe64.js",
+    "static/media/web.jpg": "/abhireact-portfolio/static/media/web.c0dec29d8d35a83b4c48.jpg",
+    "static/media/excel.jpg": "/abhireact-portfolio/static/media/excel.3c14ee232a53a7960ccc.jpg",
+    "static/media/excel in an hour.jpg": "/abhireact-portfolio/static/media/excel in an hour.c2afa0b4a38cd85152a1.jpg",
+    "static/media/introduction to generative ai.jpg": "/abhireact-portfolio/static/media/introduction to generative ai.51fc1fe47555044492df.jpg",
+    "static/media/ai for begainers.jpg": "/abhireact-portfolio/static/media/ai for begainers.692a08afb609d75d91e1.jpg",
+    "static/media/prompt engineering.jpg": "/abhireact-portfolio/static/media/prompt engineering.86d1623ae819684ff154.jpg",
+    "static/media/seo (2).jpg": "/abhireact-portfolio/static/media/seo (2).198ba942d72cb0afe40f.jpg",
+    "static/media/ai power market.jpg": "/abhireact-portfolio/static/media/ai power market.bbc01caf71ffa5ac7cfd.jpg",
+    "static/media/canva 50 design.jpg": "/abhireact-portfolio/static/media/canva 50 design.9d88942f24f792b6ff16.jpg",
+    "static/media/seo.jpg": "/abhireact-portfolio/static/media/seo.669df9bf09a776bec68f.jpg",
+    "static/media/react js.jpg": "/abhireact-portfolio/static/media/react js.ef59113c30d102e05468.jpg",
+    "static/media/cybersecurity.jpg": "/abhireact-portfolio/static/media/cybersecurity.9c87018323ed2e2e8732.jpg",
+    "static/media/ai power shopping ads.jpg": "/abhireact-portfolio/static/media/ai power shopping ads.dcbc5920ecedc00953e2.jpg",
     "index.html": "/abhireact-portfolio/index.html",
     "main.e9761080.css.map": "/abhireact-portfolio/static/css/main.e9761080.css.map",
-    "main.c8beda44.js.map": "/abhireact-portfolio/static/js/main.c8beda44.js.map"
+    "main.c8a9fe64.js.map": "/abhireact-portfolio/static/js/main.c8a9fe64.js.map"
   },
   "entrypoints": [
     "static/css/main.e9761080.css",
-    "static/js/main.c8beda44.js"
+    "static/js/main.c8a9fe64.js"
   ]
 }

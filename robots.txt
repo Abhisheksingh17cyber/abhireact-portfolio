@@ -1,0 +1,6 @@
+// robots.txt
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://Abhisheksingh17cyber.github.io/abhireact-portfolio/sitemap.xml

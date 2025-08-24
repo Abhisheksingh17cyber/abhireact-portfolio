@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/abhireact-portfolio/static/css/main.e9761080.css",
+    "main.js": "/abhireact-portfolio/static/js/main.c8beda44.js",
+    "index.html": "/abhireact-portfolio/index.html",
+    "main.e9761080.css.map": "/abhireact-portfolio/static/css/main.e9761080.css.map",
+    "main.c8beda44.js.map": "/abhireact-portfolio/static/js/main.c8beda44.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e9761080.css",
+    "static/js/main.c8beda44.js"
+  ]
+}

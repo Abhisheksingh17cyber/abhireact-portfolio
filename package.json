@@ -3,6 +3,7 @@
     "version": "1.0.0",
     "description": "🔥 Professional React Portfolio | Full-Stack Developer | CS Engineering Student - Modern, responsive portfolio showcasing web development skills, AI/ML projects, and digital marketing expertise.",
     "homepage": "https://Abhisheksingh17cyber.github.io/abhireact-portfolio",
+    "license": "MIT",
     "private": true,
     "dependencies": {
         "@testing-library/jest-dom": "^5.16.4",

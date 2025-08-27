@@ -125,6 +125,16 @@ src/
 ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Abhisheksingh17cyber&show_icons=true&theme=radical)
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Abhisheksingh17cyber&layout=compact&theme=radical)
 
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE) - see the LICENSE file for details.
+
+### What this means:
+- ✅ **Free to use** - Use this portfolio template for personal or commercial projects
+- ✅ **Modify freely** - Customize and adapt the code to your needs
+- ✅ **Share and distribute** - Share the template with others
+- ✅ **Attribution appreciated** - Credit the original author (optional but appreciated)
+
 ---
 
 ### 🌟 If you like this portfolio, please give it a ⭐!

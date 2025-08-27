@@ -1,33 +1,36 @@
 import React, { useState, useEffect } from 'react';
-import { Radar, RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, ResponsiveContainer, Cell, Tooltip } from 'recharts';
+import { Radar, RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, ResponsiveContainer, Tooltip } from 'recharts';
 
 const SkillRadarChart = () => {
   const [selectedCategory, setSelectedCategory] = useState('all');
   const [animationStep, setAnimationStep] = useState(0);
 
-  // Sample skill data - customize this for your skills
+  // Skill data based on your portfolio and certifications
   const skillsData = [
-    { skill: 'React', level: 90, category: 'frontend', color: '#61DAFB' },
+    { skill: 'React.js', level: 90, category: 'frontend', color: '#61DAFB' },
     { skill: 'JavaScript', level: 85, category: 'frontend', color: '#F7DF1E' },
-    { skill: 'Node.js', level: 80, category: 'backend', color: '#339933' },
-    { skill: 'Python', level: 75, category: 'backend', color: '#3776AB' },
-    { skill: 'MongoDB', level: 70, category: 'database', color: '#47A248' },
-    { skill: 'PostgreSQL', level: 65, category: 'database', color: '#336791' },
-    { skill: 'Docker', level: 72, category: 'devops', color: '#2496ED' },
-    { skill: 'AWS', level: 68, category: 'devops', color: '#FF9900' },
-    { skill: 'TypeScript', level: 82, category: 'frontend', color: '#3178C6' },
-    { skill: 'GraphQL', level: 60, category: 'backend', color: '#E10098' },
-    { skill: 'CSS3', level: 88, category: 'frontend', color: '#1572B6' },
-    { skill: 'Git', level: 85, category: 'tools', color: '#F05032' }
+    { skill: 'HTML/CSS', level: 88, category: 'frontend', color: '#1572B6' },
+    { skill: 'Tailwind CSS', level: 85, category: 'frontend', color: '#38B2AC' },
+    { skill: 'Node.js', level: 75, category: 'backend', color: '#339933' },
+    { skill: 'Python', level: 70, category: 'backend', color: '#3776AB' },
+    { skill: 'Generative AI', level: 80, category: 'ai', color: '#FF6B6B' },
+    { skill: 'Prompt Engineering', level: 85, category: 'ai', color: '#4ECDC4' },
+    { skill: 'Cybersecurity', level: 75, category: 'security', color: '#45B7D1' },
+    { skill: 'SEO', level: 80, category: 'marketing', color: '#96CEB4' },
+    { skill: 'Digital Marketing', level: 78, category: 'marketing', color: '#FFEAA7' },
+    { skill: 'Excel', level: 85, category: 'tools', color: '#00B894' },
+    { skill: 'Git/GitHub', level: 80, category: 'tools', color: '#F05032' },
+    { skill: 'Data Analysis', level: 72, category: 'tools', color: '#6C5CE7' }
   ];
 
   const categories = {
     all: 'All Skills',
-    frontend: 'Frontend',
-    backend: 'Backend',
-    database: 'Database',
-    devops: 'DevOps',
-    tools: 'Tools'
+    frontend: 'Frontend Development',
+    backend: 'Backend Development',
+    ai: 'AI/ML Technologies',
+    security: 'Cybersecurity',
+    marketing: 'Digital Marketing',
+    tools: 'Tools & Technologies'
   };
 
   const filteredData = selectedCategory === 'all' 
@@ -58,7 +61,6 @@ const SkillRadarChart = () => {
 
   const CustomPolarAngleAxis = (props) => {
     const { payload, x, y, cx, cy, ...rest } = props;
-    const skillData = filteredData.find(skill => skill.skill === payload.value);
     
     return (
       <text 

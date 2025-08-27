@@ -20,6 +20,7 @@
 ## 🛠️ Tech Stack
 
 ### Frontend
+
 - **React.js** - UI Framework
 - **Tailwind CSS** - Styling
 - **Framer Motion** - Animations
@@ -27,6 +28,7 @@
 - **Lucide React** - Icons
 
 ### Tools & Deployment
+
 - **GitHub Pages** - Hosting
 - **Git** - Version Control
 - **VS Code** - Development Environment
@@ -34,6 +36,7 @@
 ## 🎓 About Me
 
 Motivated Computer Science Engineering student with hands-on experience in:
+
 - **Web Development** (React.js, Node.js, JavaScript)
 - **AI/ML Technologies** (Generative AI, Prompt Engineering)
 - **Digital Marketing** (SEO, Content Marketing, AI-Powered Ads)
@@ -42,12 +45,12 @@ Motivated Computer Science Engineering student with hands-on experience in:
 ## 📚 Certifications Showcased
 
 - 🔹 ReactJS Foundations Course - ScholarHat
-- 🔹 AI for Beginners - HP LIFE Foundation  
+- 🔹 AI for Beginners - HP LIFE Foundation
 - 🔹 Introduction to Generative AI - Google Cloud
 - 🔹 AI-Powered Shopping Ads - Google
 - 🔹 Cybersecurity Fundamentals - Tech Mahindra
 - 🔹 SEO Crash Course - Semrush Academy
-- *...and more professional certifications*
+- _...and more professional certifications_
 
 ## 🚀 Quick Start
 
@@ -124,16 +127,6 @@ src/
 
 ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Abhisheksingh17cyber&show_icons=true&theme=radical)
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Abhisheksingh17cyber&layout=compact&theme=radical)
-
-## 📄 License
-
-This project is licensed under the [MIT License](LICENSE) - see the LICENSE file for details.
-
-### What this means:
-- ✅ **Free to use** - Use this portfolio template for personal or commercial projects
-- ✅ **Modify freely** - Customize and adapt the code to your needs
-- ✅ **Share and distribute** - Share the template with others
-- ✅ **Attribution appreciated** - Credit the original author (optional but appreciated)
 
 ---
 

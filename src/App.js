@@ -7,6 +7,7 @@ import 'aos/dist/aos.css';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
+import SkillRadarChart from './components/SkillRadarChart';
 import Experience from './components/Experience';
 import Projects from './components/Projects';
 import Certifications from './components/Certifications';
@@ -35,6 +36,11 @@ function App() {
                         <>
                             <Hero />
                             <About />
+                            <section id="skills" className="py-20 bg-white dark:bg-gray-900">
+                                <div className="container mx-auto px-4">
+                                    <SkillRadarChart />
+                                </div>
+                            </section>
                             <Experience />
                             <Projects />
                             <Certifications />

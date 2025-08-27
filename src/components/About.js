@@ -1,7 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Code, Brain, Shield, TrendingUp, Download } from 'lucide-react';
-import SkillRadarChart from './SkillRadarChart';
 
 const About = () => {
     const skills = [
@@ -164,17 +163,6 @@ const About = () => {
                             </div>
                         </motion.div>
                     ))}
-                </motion.div>
-
-                {/* Interactive Skills Radar Chart */}
-                <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.6, delay: 0.2 }}
-                    viewport={{ once: true }}
-                    className="mt-16"
-                >
-                    <SkillRadarChart />
                 </motion.div>
             </div>
         </section>

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Award, ExternalLink, Filter } from 'lucide-react';
 import { certificatesData, categories } from '../data/certificates';
+import CertificateViewer from './CertificateViewer';
 
 const Certifications = () => {
     const [selectedCategory, setSelectedCategory] = useState('All');
@@ -77,7 +78,10 @@ const Certifications = () => {
                             viewport={{ once: true }}
                             whileHover={{ y: -5 }}
                             className="card cursor-pointer group"
-                            onClick={() => setSelectedCertificate(certificate)}
+                            onClick={() => {
+                                console.log('Certificate clicked:', certificate.title);
+                                setSelectedCertificate(certificate);
+                            }}
                         >
                             {/* Certificate Image */}
                             <div className="relative mb-4 overflow-hidden rounded-lg">
@@ -86,12 +90,14 @@ const Certifications = () => {
                                     alt={certificate.title}
                                     className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105"
                                     onError={(e) => {
+                                        console.error('Image failed to load:', certificate.image);
                                         e.target.src = 'data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300"><rect width="400" height="300" fill="%23f3f4f6"/><text x="200" y="150" font-family="Arial" font-size="16" fill="%236b7280" text-anchor="middle">Certificate Image</text></svg>';
                                     }}
                                 />
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                                    <div className="absolute bottom-4 left-4 right-4">
-                                        <ExternalLink className="w-5 h-5 text-white ml-auto" />
+                                    <div className="absolute bottom-4 left-4 right-4 flex justify-between items-center">
+                                        <span className="text-white text-sm font-medium">Click to view</span>
+                                        <ExternalLink className="w-5 h-5 text-white" />
                                     </div>
                                 </div>
                             </div>
@@ -143,75 +149,10 @@ const Certifications = () => {
 
                 {/* Certificate Modal */}
                 {selectedCertificate && (
-                    <motion.div
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        exit={{ opacity: 0 }}
-                        className="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 flex items-center justify-center p-4"
-                        onClick={() => setSelectedCertificate(null)}
-                    >
-                        <motion.div
-                            initial={{ scale: 0.8, opacity: 0 }}
-                            animate={{ scale: 1, opacity: 1 }}
-                            exit={{ scale: 0.8, opacity: 0 }}
-                            className="bg-white dark:bg-gray-800 rounded-xl p-6 max-w-2xl w-full max-h-[90vh] overflow-y-auto"
-                            onClick={(e) => e.stopPropagation()}
-                        >
-                            <div className="flex justify-between items-start mb-4">
-                                <h3 className="text-2xl font-bold text-gray-900 dark:text-white">
-                                    {selectedCertificate.title}
-                                </h3>
-                                <button
-                                    onClick={() => setSelectedCertificate(null)}
-                                    className="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200"
-                                >
-                                    ×
-                                </button>
-                            </div>
-
-                            <img
-                                src={selectedCertificate.image}
-                                alt={selectedCertificate.title}
-                                className="w-full h-64 object-cover rounded-lg mb-4"
-                                onError={(e) => {
-                                    e.target.src = 'data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300"><rect width="400" height="300" fill="%23f3f4f6"/><text x="200" y="150" font-family="Arial" font-size="16" fill="%236b7280" text-anchor="middle">Certificate Image</text></svg>';
-                                }}
-                            />
-
-                            <div className="space-y-4">
-                                <div className="flex items-center gap-4">
-                                    <span className={`${getCategoryColor(selectedCertificate.category)} text-white text-sm px-3 py-1 rounded-full`}>
-                                        {selectedCertificate.category}
-                                    </span>
-                                    <span className="text-gray-500 dark:text-gray-400">
-                                        {selectedCertificate.date}
-                                    </span>
-                                </div>
-
-                                <p className="text-lg font-medium text-primary-600 dark:text-primary-400">
-                                    Issued by {selectedCertificate.issuer}
-                                </p>
-
-                                <p className="text-gray-600 dark:text-gray-300">
-                                    {selectedCertificate.description}
-                                </p>
-
-                                <div>
-                                    <h4 className="font-semibold text-gray-900 dark:text-white mb-2">Skills Covered:</h4>
-                                    <div className="flex flex-wrap gap-2">
-                                        {selectedCertificate.skills.map((skill, index) => (
-                                            <span
-                                                key={index}
-                                                className="bg-primary-100 dark:bg-primary-900 text-primary-800 dark:text-primary-200 px-3 py-1 rounded-full text-sm"
-                                            >
-                                                {skill}
-                                            </span>
-                                        ))}
-                                    </div>
-                                </div>
-                            </div>
-                        </motion.div>
-                    </motion.div>
+                    <CertificateViewer
+                        certificate={selectedCertificate}
+                        onClose={() => setSelectedCertificate(null)}
+                    />
                 )}
 
                 {/* Summary Stats */}

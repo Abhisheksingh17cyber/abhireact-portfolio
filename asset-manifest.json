@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/abhireact-portfolio/static/css/main.0144e788.css",
-    "main.js": "/abhireact-portfolio/static/js/main.b5edd3da.js",
+    "main.css": "/abhireact-portfolio/static/css/main.71198cb6.css",
+    "main.js": "/abhireact-portfolio/static/js/main.f8a10a2c.js",
     "static/media/web.jpg": "/abhireact-portfolio/static/media/web.c0dec29d8d35a83b4c48.jpg",
     "static/media/excel.jpg": "/abhireact-portfolio/static/media/excel.3c14ee232a53a7960ccc.jpg",
     "static/media/excel in an hour.jpg": "/abhireact-portfolio/static/media/excel in an hour.c2afa0b4a38cd85152a1.jpg",
@@ -16,11 +16,11 @@
     "static/media/cybersecurity.jpg": "/abhireact-portfolio/static/media/cybersecurity.9c87018323ed2e2e8732.jpg",
     "static/media/ai power shopping ads.jpg": "/abhireact-portfolio/static/media/ai power shopping ads.dcbc5920ecedc00953e2.jpg",
     "index.html": "/abhireact-portfolio/index.html",
-    "main.0144e788.css.map": "/abhireact-portfolio/static/css/main.0144e788.css.map",
-    "main.b5edd3da.js.map": "/abhireact-portfolio/static/js/main.b5edd3da.js.map"
+    "main.71198cb6.css.map": "/abhireact-portfolio/static/css/main.71198cb6.css.map",
+    "main.f8a10a2c.js.map": "/abhireact-portfolio/static/js/main.f8a10a2c.js.map"
   },
   "entrypoints": [
-    "static/css/main.0144e788.css",
-    "static/js/main.b5edd3da.js"
+    "static/css/main.71198cb6.css",
+    "static/js/main.f8a10a2c.js"
   ]
 }

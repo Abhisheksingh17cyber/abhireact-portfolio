@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/abhireact-portfolio/static/css/main.0144e788.css",
-    "main.js": "/abhireact-portfolio/static/js/main.8311baa2.js",
+    "main.js": "/abhireact-portfolio/static/js/main.b5edd3da.js",
     "static/media/web.jpg": "/abhireact-portfolio/static/media/web.c0dec29d8d35a83b4c48.jpg",
     "static/media/excel.jpg": "/abhireact-portfolio/static/media/excel.3c14ee232a53a7960ccc.jpg",
     "static/media/excel in an hour.jpg": "/abhireact-portfolio/static/media/excel in an hour.c2afa0b4a38cd85152a1.jpg",
@@ -17,10 +17,10 @@
     "static/media/ai power shopping ads.jpg": "/abhireact-portfolio/static/media/ai power shopping ads.dcbc5920ecedc00953e2.jpg",
     "index.html": "/abhireact-portfolio/index.html",
     "main.0144e788.css.map": "/abhireact-portfolio/static/css/main.0144e788.css.map",
-    "main.8311baa2.js.map": "/abhireact-portfolio/static/js/main.8311baa2.js.map"
+    "main.b5edd3da.js.map": "/abhireact-portfolio/static/js/main.b5edd3da.js.map"
   },
   "entrypoints": [
     "static/css/main.0144e788.css",
-    "static/js/main.8311baa2.js"
+    "static/js/main.b5edd3da.js"
   ]
 }

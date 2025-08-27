@@ -40,9 +40,9 @@ const SkillRadarChart = () => {
       setAnimationStep(1);
     }, 500);
     return () => clearTimeout(timer);
-  }, []);
+  }, [selectedCategory]); // Add selectedCategory to dependencies to trigger animation on filter change
 
-  const CustomTooltip = ({ active, payload, label }) => {
+  const CustomTooltip = ({ active, payload }) => {
     if (active && payload && payload.length) {
       const data = payload[0].payload;
       return (
@@ -88,7 +88,10 @@ const SkillRadarChart = () => {
         {Object.entries(categories).map(([key, label]) => (
           <button
             key={key}
-            onClick={() => setSelectedCategory(key)}
+            onClick={() => {
+              setSelectedCategory(key);
+              setAnimationStep(0); // Reset animation
+            }}
             className={`px-6 py-2 rounded-full text-sm font-medium transition-all duration-300 transform hover:scale-105 ${
               selectedCategory === key
                 ? 'bg-gradient-to-r from-blue-500 to-purple-600 text-white shadow-lg'
@@ -100,10 +103,20 @@ const SkillRadarChart = () => {
         ))}
       </div>
 
-      {/* Radar Chart */}
-      <div className="relative">
+      {/* Single Radar Chart */}
+      <div className="relative mb-8">
         <ResponsiveContainer width="100%" height={500}>
-          <RadarChart data={filteredData} margin={{ top: 40, right: 80, bottom: 40, left: 80 }}>
+          <RadarChart 
+            data={filteredData} 
+            margin={{ top: 40, right: 80, bottom: 40, left: 80 }}
+          >
+            <defs>
+              <linearGradient id={`gradient-${selectedCategory}`} x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stopColor="#3B82F6" />
+                <stop offset="50%" stopColor="#8B5CF6" />
+                <stop offset="100%" stopColor="#EC4899" />
+              </linearGradient>
+            </defs>
             <PolarGrid 
               stroke="#374151" 
               strokeWidth={1}
@@ -124,8 +137,8 @@ const SkillRadarChart = () => {
             <Radar
               name="Skills"
               dataKey="level"
-              stroke="url(#gradient)"
-              fill="url(#gradient)"
+              stroke={`url(#gradient-${selectedCategory})`}
+              fill={`url(#gradient-${selectedCategory})`}
               fillOpacity={0.3}
               strokeWidth={3}
               dot={{ fill: '#60A5FA', strokeWidth: 2, r: 6 }}
@@ -134,13 +147,6 @@ const SkillRadarChart = () => {
               isAnimationActive={animationStep === 1}
             />
             <Tooltip content={<CustomTooltip />} />
-            <defs>
-              <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" stopColor="#3B82F6" />
-                <stop offset="50%" stopColor="#8B5CF6" />
-                <stop offset="100%" stopColor="#EC4899" />
-              </linearGradient>
-            </defs>
           </RadarChart>
         </ResponsiveContainer>
       </div>

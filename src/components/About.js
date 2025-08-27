@@ -1,35 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Code, Brain, Shield, TrendingUp, Download } from 'lucide-react';
+import { Download } from 'lucide-react';
 
 const About = () => {
-    const skills = [
-        {
-            category: 'Frontend Development',
-            icon: <Code className="w-6 h-6" />,
-            skills: ['React.js', 'JavaScript', 'HTML/CSS', 'Tailwind CSS', 'Responsive Design'],
-            color: 'bg-blue-500'
-        },
-        {
-            category: 'AI/ML Technologies',
-            icon: <Brain className="w-6 h-6" />,
-            skills: ['Generative AI', 'Prompt Engineering', 'Machine Learning', 'AI Applications'],
-            color: 'bg-purple-500'
-        },
-        {
-            category: 'Cybersecurity',
-            icon: <Shield className="w-6 h-6" />,
-            skills: ['Network Security', 'Risk Management', 'Security Fundamentals', 'Threat Analysis'],
-            color: 'bg-green-500'
-        },
-        {
-            category: 'Digital Marketing',
-            icon: <TrendingUp className="w-6 h-6" />,
-            skills: ['SEO Optimization', 'Content Marketing', 'AI-Powered Ads', 'Analytics'],
-            color: 'bg-orange-500'
-        }
-    ];
-
     const stats = [
         { number: '15+', label: 'Certifications', description: 'Professional certificates earned' },
         { number: '3+', label: 'Years Learning', description: 'Continuous skill development' },
@@ -92,44 +65,34 @@ const About = () => {
                         </motion.a>
                     </motion.div>
 
-                    {/* Skills Grid */}
+                    {/* Skills Preview - Link to Interactive Section */}
                     <motion.div
                         initial={{ opacity: 0, x: 50 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.6 }}
                         viewport={{ once: true }}
-                        className="grid grid-cols-1 md:grid-cols-2 gap-6"
+                        className="text-center"
                     >
-                        {skills.map((skillGroup, index) => (
-                            <motion.div
-                                key={skillGroup.category}
-                                initial={{ opacity: 0, y: 20 }}
-                                whileInView={{ opacity: 1, y: 0 }}
-                                transition={{ duration: 0.6, delay: index * 0.1 }}
-                                viewport={{ once: true }}
-                                className="card"
+                        <div className="bg-gradient-to-r from-primary-600 to-purple-600 rounded-xl p-8 text-white">
+                            <h4 className="text-2xl font-bold mb-4">Technical Skills</h4>
+                            <p className="text-primary-100 mb-6">
+                                Explore my technical expertise through an interactive radar chart visualization
+                            </p>
+                            <button
+                                onClick={() => {
+                                    const element = document.querySelector('#skills');
+                                    if (element) {
+                                        element.scrollIntoView({ behavior: 'smooth' });
+                                    }
+                                }}
+                                className="bg-white text-primary-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-200 inline-flex items-center space-x-2"
                             >
-                                <div className="flex items-center mb-4">
-                                    <div className={`${skillGroup.color} text-white p-2 rounded-lg mr-3`}>
-                                        {skillGroup.icon}
-                                    </div>
-                                    <h4 className="font-semibold text-gray-900 dark:text-white">
-                                        {skillGroup.category}
-                                    </h4>
-                                </div>
-                                <ul className="space-y-2">
-                                    {skillGroup.skills.map((skill, skillIndex) => (
-                                        <li
-                                            key={skillIndex}
-                                            className="text-sm text-gray-600 dark:text-gray-300 flex items-center"
-                                        >
-                                            <span className="w-1.5 h-1.5 bg-primary-500 rounded-full mr-2"></span>
-                                            {skill}
-                                        </li>
-                                    ))}
-                                </ul>
-                            </motion.div>
-                        ))}
+                                <span>View Interactive Skills Chart</span>
+                                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                                </svg>
+                            </button>
+                        </div>
                     </motion.div>
                 </div>
 
